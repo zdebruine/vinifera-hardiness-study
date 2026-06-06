@@ -1,10 +1,15 @@
-# Data — provenance is tracked in data/PROVENANCE.md; raw bytes are not committed.
+# Data — bulky immutable caches stay out (rebuildable; provenance in data/PROVENANCE.md);
+# compact *sourced* outputs are committed so the repo stores the data we source.
 data/raw/*
-data/interim/*
-data/processed/*
 !data/raw/.gitkeep
+data/interim/*
 !data/interim/.gitkeep
+!data/interim/anchor_climate.csv
+data/processed/*
 !data/processed/.gitkeep
+!data/processed/region_climate.csv
+# vinifera.db is a rebuildable binary (scripts/build_db.py) — keep it out of git.
+data/processed/vinifera.db
 
 # Python
 __pycache__/

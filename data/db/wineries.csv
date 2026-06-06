@@ -1,0 +1,53 @@
+winery_id,region_id,name,role,latitude,longitude,elevation_m,coord_precision,notes
+bordeaux-medoc,bordeaux,Medoc (Pauillac),cool_maritime,45.20,-0.75,8,approx,northern left-bank gravel
+bordeaux-sauternes,bordeaux,Sauternes,warm_south,44.53,-0.33,30,approx,warm autumn-humid south
+burgundy-hautes-cotes,burgundy,Hautes-Cotes,high_altitude,47.10,4.70,400,approx,higher cooler benchland
+burgundy-cote-floor,burgundy,Cote d'Or floor,valley_floor,47.05,4.85,250,approx,prime mid-slope/floor
+champagne-montagne,champagne,Montagne de Reims,cool_north,49.25,4.00,150,approx,northern limit
+champagne-aube,champagne,Cote des Bar (Aube),warm_south,48.13,4.55,200,approx,warmer southern Champagne
+alsace-foothills,alsace,Vosges foothills (Kaysersberg),warm,48.14,7.27,240,approx,rain-shadow sun slopes
+alsace-plain,alsace,Rhine plain,cool_frost,48.30,7.50,170,approx,frost-prone valley floor
+rhone-north-rotie,rhone-north,Cote-Rotie,warm,45.46,4.79,220,approx,steep south-facing
+rhone-north-high,rhone-north,Saint-Joseph heights,high_altitude,45.20,4.78,350,approx,cooler elevation
+rhone-south-cdp,rhone-south,Chateauneuf-du-Pape,warm,44.06,4.83,120,approx,galets; hot
+rhone-south-ventoux,rhone-south,Ventoux foothills,high_altitude,44.13,5.13,400,approx,cooler altitude
+mosel-suntrap,mosel,Bernkastel steep slate,warm,49.92,7.07,150,approx,sun-trap microclimate
+mosel-saar,mosel,Upper Saar,cool,49.62,6.55,220,approx,frost-prone tributary
+rheingau-river,rheingau,Rudesheim,warm,49.98,7.92,120,approx,river-warmed slopes
+rheingau-east,rheingau,Hochheim,cool,50.01,8.35,140,approx,eastern cooler
+wachau-low,wachau,River terrace,warm,48.37,15.43,220,approx,Smaragd zone
+wachau-high,wachau,High terraces,high_altitude,48.40,15.40,450,approx,cool upper terraces
+burgenland-lake,burgenland,Neusiedlersee,warm,47.80,16.77,130,approx,lake-warmed
+burgenland-eisenberg,burgenland,Eisenberg,cool,47.10,16.40,300,approx,higher iron soils
+piedmont-barolo,piedmont,Barolo (La Morra),warm,44.64,7.92,400,approx,Langhe hills
+piedmont-altopiemonte,piedmont,Gattinara (Alto Piemonte),cool,45.62,8.37,350,approx,northern cooler
+tuscany-maremma,tuscany,Maremma coast,warm,42.75,11.12,50,approx,maritime warm
+tuscany-rufina,tuscany,Chianti Rufina,high_altitude,43.82,11.47,350,approx,cool inland hills
+alto-adige-floor,alto-adige,Bolzano valley floor,warm,46.50,11.35,250,approx,warm Lagrein zone
+alto-adige-high,alto-adige,Eisacktal high slopes,high_altitude,46.60,11.45,600,approx,alpine cool
+rioja-baja,rioja,Rioja Oriental (Alfaro),warm,42.18,-1.75,300,approx,Mediterranean east
+rioja-alta,rioja,Rioja Alta (Haro),cool,42.58,-2.85,480,approx,Atlantic-influenced west
+ribera-aranda,ribera-del-duero,Aranda plateau,continental,41.67,-3.69,800,approx,big diurnal range
+ribera-high,ribera-del-duero,Western high vineyards,high_altitude,41.62,-4.10,900,approx,colder high plateau
+douro-baixo,douro,Baixo Corgo,cool,41.16,-7.80,200,approx,wetter cooler west
+douro-superior,douro,Douro Superior,warm,41.10,-7.10,150,approx,hot dry east
+tokaj-valley,tokaj,Tokaj valley,warm,48.12,21.41,110,approx,botrytis zone
+tokaj-slope,tokaj,Tokaj upper slopes,high_altitude,48.27,21.45,300,approx,cooler volcanic slope
+santorini-coast,santorini,Coastal Santorini,warm,36.40,25.43,50,approx,windy arid
+santorini-high,santorini,Pyrgos heights,high_altitude,36.40,25.44,300,approx,cooler altitude
+etna-low,sicily,Etna south low,warm,37.70,15.05,600,approx,lower volcanic slope
+etna-high,sicily,Etna north high,high_altitude,37.80,14.95,1000,approx,high-elevation vines
+kakheti-valley,kakheti,Alazani valley (Telavi),warm,41.85,45.55,400,approx,warm valley floor
+kakheti-foothills,kakheti,Caucasus foothills,high_altitude,41.95,45.65,800,approx,cooler slopes
+kartli-mukhrani,kartli,Mukhrani plain,continental,41.92,44.55,550,approx,open plain
+kartli-ateni,kartli,Ateni valley,high_altitude,41.95,44.05,700,approx,higher sheltered valley
+imereti-valley,imereti,Imereti valley,warm,42.25,42.70,150,approx,humid subtropical
+imereti-hills,imereti,Imereti hills,cool,42.30,42.85,400,approx,cooler slopes
+vayots-areni,vayots-dzor,Areni village,warm,39.72,45.19,1000,approx,warm for its altitude
+vayots-high,vayots-dzor,High Vayots Dzor,high_altitude,39.75,45.30,1400,approx,very high vineyards
+aragatsotn-low,aragatsotn,Lower Aragatsotn,warm,40.25,44.30,1100,approx,volcanic foothills
+aragatsotn-high,aragatsotn,Upper Aragatsotn,high_altitude,40.40,44.15,1600,approx,extreme altitude
+finger-lakes-shore,finger-lakes,Lakeshore,maritime,42.55,-76.95,150,approx,lake-moderated
+finger-lakes-upland,finger-lakes,Upland,cool,42.40,-77.05,350,approx,colder frost-prone
+napa-calistoga,napa,Calistoga,warm,38.58,-122.58,110,approx,warm north valley
+napa-carneros,napa,Carneros,cool,38.25,-122.33,10,approx,bay-cooled south

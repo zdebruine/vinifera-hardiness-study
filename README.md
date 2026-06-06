@@ -88,19 +88,40 @@ python3 -m http.server -d site 8000   # then open http://localhost:8000
 ## Layout
 
 ```
-src/vinifera/      pipeline stages (one module per stage)
+src/vinifera/      pipeline stages + pure scoring math (one module per stage)
+data/db/           canonical relational dataset (varieties, regions, wineries, ...)
 site/              static GitHub Pages tools site (index.html, styles.css, app.js)
 site/data/         generated JSON consumed by the tools (built from data/seed/)
 data/seed/         small illustrative seed sample of every source type (committed)
-data/raw/          immutable external pulls (gitignored; provenance in data/PROVENANCE.md)
-data/interim/      intermediate artifacts (gitignored)
-data/processed/    final tables/scores (gitignored)
-docs/              plan, data disclosure, methodology notes
-scripts/           reproducible entry points (build_site.py, session_start.sh)
-tests/             per-stage unit tests
+data/raw/          immutable bulky caches (gitignored; provenance in data/PROVENANCE.md)
+data/interim/      intermediate artifacts (anchor_climate.csv committed; rest gitignored)
+data/processed/    final tables/scores (region_climate.csv committed; .db gitignored)
+docs/              plan, data disclosure, SCHEMA, methodology notes
+scripts/           pipelines (build_db, build_site, fetch_weather, build_climate)
+scripts/sources/   external-source loaders (FPS catalog, Anderson hectares)
+tests/             per-stage + pipeline unit tests
 smoke_tests.py     fast end-to-end smoke test of stage interfaces
 .claude/           SessionStart hook: auto-installs deps and runs smoke tests
 ```
+
+## Data model (relational)
+
+The two anchor tables — **varieties** and **regions** — are curated as CSVs under
+`data/db/` and compiled to SQLite (`scripts/build_db.py`, with referential-integrity
+checks). They connect through `variety_region` (what grows where) and `wineries` (climate
+anchors that bracket each region's extremes). Full schema in
+[`docs/SCHEMA.md`](docs/SCHEMA.md); honesty notes in [`data/db/README.md`](data/db/README.md).
+
+```bash
+python3 scripts/build_db.py        # -> data/processed/vinifera.db
+```
+
+**Sourcing (needs open network → runs in GitHub Actions, not the sandbox):**
+`.github/workflows/data-refresh.yml` pulls Open-Meteo ERA5 weather for every climate
+anchor (`scripts/fetch_weather.py`), derives per-region climate + a variation score
+(`scripts/build_climate.py`), and commits the compact outputs back. The FPS catalog and
+Anderson hectare loaders live in `scripts/sources/` and run manually until their live
+selectors are confirmed.
 
 ## Setup
 
