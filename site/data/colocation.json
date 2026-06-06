@@ -1,0 +1,100 @@
+[
+  {
+    "region": "Rheingau DE",
+    "variety_id": "RIES",
+    "bearing_ha": "2400",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Rheingau DE",
+    "variety_id": "PINN",
+    "bearing_ha": "400",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Mosel DE",
+    "variety_id": "RIES",
+    "bearing_ha": "5100",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Mosel DE",
+    "variety_id": "MUTH",
+    "bearing_ha": "900",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Wachau AT",
+    "variety_id": "GRUV",
+    "bearing_ha": "1300",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Wachau AT",
+    "variety_id": "RIES",
+    "bearing_ha": "500",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Burgenland AT",
+    "variety_id": "BLAU",
+    "bearing_ha": "2700",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Finger Lakes NY",
+    "variety_id": "RIES",
+    "bearing_ha": "400",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Finger Lakes NY",
+    "variety_id": "CABF",
+    "bearing_ha": "150",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Columbia Valley WA",
+    "variety_id": "CABS",
+    "bearing_ha": "5200",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Columbia Valley WA",
+    "variety_id": "CHAR",
+    "bearing_ha": "1500",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Alsace FR",
+    "variety_id": "GEWU",
+    "bearing_ha": "3000",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Alsace FR",
+    "variety_id": "PING",
+    "bearing_ha": "2400",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  },
+  {
+    "region": "Alsace FR",
+    "variety_id": "RIES",
+    "bearing_ha": "3500",
+    "year": "2016",
+    "source": "Anderson2020_illustrative"
+  }
+]

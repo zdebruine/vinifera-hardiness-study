@@ -1,0 +1,204 @@
+[
+  {
+    "variety_id": "RIES",
+    "prime_name": "Riesling",
+    "color": "white",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [
+      "Weisser Riesling"
+    ],
+    "parents": [],
+    "pedigree_note": "",
+    "lt50_c": -25.5,
+    "gdd_req_f": 2100.0,
+    "ripening_sigma_f": 240.0
+  },
+  {
+    "variety_id": "CHAR",
+    "prime_name": "Chardonnay",
+    "color": "white",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [
+      "Morillon"
+    ],
+    "parents": [
+      {
+        "id": "PINN",
+        "name": "Pinot noir"
+      }
+    ],
+    "pedigree_note": "Pinot x Gouais blanc (Gouais not in seed set)",
+    "lt50_c": -23.0,
+    "gdd_req_f": 2300.0,
+    "ripening_sigma_f": 250.0
+  },
+  {
+    "variety_id": "PINN",
+    "prime_name": "Pinot noir",
+    "color": "red",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [],
+    "parents": [],
+    "pedigree_note": "",
+    "lt50_c": -23.5,
+    "gdd_req_f": 2200.0,
+    "ripening_sigma_f": 240.0
+  },
+  {
+    "variety_id": "GEWU",
+    "prime_name": "Gewurztraminer",
+    "color": "rose",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [
+      "Traminer",
+      "Savagnin rose"
+    ],
+    "parents": [],
+    "pedigree_note": "",
+    "lt50_c": -22.0,
+    "gdd_req_f": 2150.0,
+    "ripening_sigma_f": 230.0
+  },
+  {
+    "variety_id": "CABS",
+    "prime_name": "Cabernet Sauvignon",
+    "color": "red",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [],
+    "parents": [
+      {
+        "id": "CABF",
+        "name": "Cabernet franc"
+      },
+      {
+        "id": "SAUB",
+        "name": "Sauvignon blanc"
+      }
+    ],
+    "pedigree_note": "Cabernet franc x Sauvignon blanc (Bordeaux 17th c.)",
+    "lt50_c": -22.5,
+    "gdd_req_f": 3200.0,
+    "ripening_sigma_f": 300.0
+  },
+  {
+    "variety_id": "CABF",
+    "prime_name": "Cabernet franc",
+    "color": "red",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [],
+    "parents": [],
+    "pedigree_note": "",
+    "lt50_c": -24.0,
+    "gdd_req_f": 2900.0,
+    "ripening_sigma_f": 270.0
+  },
+  {
+    "variety_id": "SAUB",
+    "prime_name": "Sauvignon blanc",
+    "color": "white",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [],
+    "parents": [],
+    "pedigree_note": "",
+    "lt50_c": -22.0,
+    "gdd_req_f": 2500.0,
+    "ripening_sigma_f": 260.0
+  },
+  {
+    "variety_id": "GRUV",
+    "prime_name": "Gruner Veltliner",
+    "color": "white",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [
+      "Weissgipfler"
+    ],
+    "parents": [
+      {
+        "id": "GEWU",
+        "name": "Gewurztraminer"
+      }
+    ],
+    "pedigree_note": "Traminer x St. Georgen (St. Georgen not in seed set)",
+    "lt50_c": -22.0,
+    "gdd_req_f": 2400.0,
+    "ripening_sigma_f": 250.0
+  },
+  {
+    "variety_id": "BLAU",
+    "prime_name": "Blaufrankisch",
+    "color": "red",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [
+      "Lemberger",
+      "Kekfrankos"
+    ],
+    "parents": [],
+    "pedigree_note": "",
+    "lt50_c": -24.0,
+    "gdd_req_f": 2900.0,
+    "ripening_sigma_f": 270.0
+  },
+  {
+    "variety_id": "GREN",
+    "prime_name": "Grenache",
+    "color": "red",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [],
+    "parents": [],
+    "pedigree_note": "",
+    "lt50_c": -18.0,
+    "gdd_req_f": 3300.0,
+    "ripening_sigma_f": 300.0
+  },
+  {
+    "variety_id": "PING",
+    "prime_name": "Pinot gris",
+    "color": "white",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [
+      "Grauburgunder",
+      "Pinot grigio"
+    ],
+    "parents": [
+      {
+        "id": "PINN",
+        "name": "Pinot noir"
+      }
+    ],
+    "pedigree_note": "color mutation of Pinot",
+    "lt50_c": -22.5,
+    "gdd_req_f": 2300.0,
+    "ripening_sigma_f": 240.0
+  },
+  {
+    "variety_id": "MUTH",
+    "prime_name": "Muller-Thurgau",
+    "color": "white",
+    "species": "Vitis vinifera",
+    "fps_id": "",
+    "synonyms": [
+      "Rivaner"
+    ],
+    "parents": [
+      {
+        "id": "RIES",
+        "name": "Riesling"
+      }
+    ],
+    "pedigree_note": "Riesling x Madeleine Royale (Madeleine not in seed set)",
+    "lt50_c": -23.0,
+    "gdd_req_f": 1900.0,
+    "ripening_sigma_f": 220.0
+  }
+]

@@ -1,0 +1,6 @@
+variety_id,parent1_id,parent2_id,note
+CHAR,PINN,,Pinot x Gouais blanc (Gouais not in seed set)
+CABS,CABF,SAUB,Cabernet franc x Sauvignon blanc (Bordeaux 17th c.)
+MUTH,RIES,,Riesling x Madeleine Royale (Madeleine not in seed set)
+GRUV,GEWU,,Traminer x St. Georgen (St. Georgen not in seed set)
+PING,PINN,,color mutation of Pinot

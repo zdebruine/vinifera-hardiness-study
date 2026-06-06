@@ -1,0 +1,7 @@
+site_id,name,country,region,latitude,longitude,gdd_winkler_f,burial_flag
+GENEVA_NY,Geneva,USA,Finger Lakes NY,42.88,-77.03,2450,0
+WALLA_WA,Walla Walla,USA,Columbia Valley WA,46.07,-118.34,3050,0
+GEIS_DE,Geisenheim,Germany,Rheingau,49.98,7.96,2300,0
+ORLEANS_QC,Ile d'Orleans,Canada,Quebec,46.92,-71.00,1950,1
+CHANGLI_CN,Changli,China,Hebei,39.70,119.16,3250,1
+OKAN_BC,Okanagan,Canada,British Columbia,49.50,-119.60,2550,0

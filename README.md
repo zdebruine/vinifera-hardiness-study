@@ -19,9 +19,42 @@ All sources, retrieval dates, and code are publicly disclosed.
 
 ## Status
 
-Early scaffold. The pipeline stages below are stubbed with documented interfaces and
-caveats; none are implemented yet. See `docs/PLAN.md` for the full plan and data
-disclosure, and the analysis notes for known methodological risks.
+Early scaffold with a working tools site. The data-dependent pipeline stages are stubbed
+with documented interfaces and caveats; the two closed-form stages (ripening, scoring) are
+implemented and drive the live tools. See `docs/PLAN.md` for the full plan and data
+disclosure, and `docs/ANALYSIS.md` for known methodological risks.
+
+## Web tools (GitHub Pages)
+
+**Live site:** https://zdebruine.github.io/vinifera-hardiness-study/
+*(goes live once Pages is enabled — see "Deploying the site" below).*
+
+Six mobile-responsive, client-side tools built from the seed data:
+
+1. **Suitability explorer** — variety × site → survival × ripening, with propagated uncertainty.
+2. **Ripening calculator** — interactive P(ripen) = Φ((GDD−GDD_req)/σ) with a live curve.
+3. **Climate & freezes** — seed sites, Winkler GDD, per-event freeze minima, burial flags.
+4. **Cold hardiness** — sortable/filterable midwinter bud LT50 table.
+5. **Varieties & pedigree** — universe with synonyms and recorded parents.
+6. **Colocation** — region × variety bearing hectares.
+
+The site is static (no build tooling, no npm); `scripts/build_site.py` converts
+`data/seed/*.csv` into `site/data/*.json` using the real `src/vinifera` math.
+
+### Deploying the site
+
+`.github/workflows/pages.yml` rebuilds the data and deploys on every push. **One-time
+setup:** in the repo, go to **Settings → Pages → Source → "GitHub Actions"**. The
+`github-pages` environment deploys from the default branch (`main`), so the site goes live
+after this branch is merged to `main` (or run the workflow manually via *Actions →
+Deploy site to GitHub Pages → Run workflow*).
+
+### Preview locally
+
+```bash
+python3 scripts/build_site.py
+python3 -m http.server -d site 8000   # then open http://localhost:8000
+```
 
 ## Pipeline
 
@@ -56,13 +89,17 @@ disclosure, and the analysis notes for known methodological risks.
 
 ```
 src/vinifera/      pipeline stages (one module per stage)
+site/              static GitHub Pages tools site (index.html, styles.css, app.js)
+site/data/         generated JSON consumed by the tools (built from data/seed/)
+data/seed/         small illustrative seed sample of every source type (committed)
 data/raw/          immutable external pulls (gitignored; provenance in data/PROVENANCE.md)
 data/interim/      intermediate artifacts (gitignored)
 data/processed/    final tables/scores (gitignored)
 docs/              plan, data disclosure, methodology notes
-scripts/           reproducible entry points (pulls, builds)
+scripts/           reproducible entry points (build_site.py, session_start.sh)
 tests/             per-stage unit tests
 smoke_tests.py     fast end-to-end smoke test of stage interfaces
+.claude/           SessionStart hook: auto-installs deps and runs smoke tests
 ```
 
 ## Setup

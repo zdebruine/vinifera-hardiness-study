@@ -1,0 +1,9 @@
+variety_id,event_label,present_before,present_after,n_sites,any_burial,p_survived,p_survived_sd
+RIES,FEB_1956,1,1,4,0,0.80,0.15
+RIES,JAN_1985,1,1,3,0,0.70,0.18
+PINN,JAN_1985,1,1,2,0,0.60,0.20
+CABF,JAN_1985,1,1,2,0,0.55,0.22
+GEWU,FEB_1956,1,1,3,0,0.65,0.20
+GREN,JAN_1987,1,0,2,0,0.20,0.20
+CHAR,JAN_1987,1,1,2,0,0.60,0.22
+RIES,JAN_1985,1,1,2,1,0.50,0.30

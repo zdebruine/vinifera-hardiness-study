@@ -1,0 +1,15 @@
+{
+  "built_at": "2026-06-06T12:16:43+00:00",
+  "data_status": "seed/illustrative -- not sourced measurements",
+  "params": {
+    "sigma_hardiness_c": 2.5,
+    "tmin_bias_c": 2.0,
+    "gdd_uncertainty_f": 150.0
+  },
+  "counts": {
+    "varieties": 12,
+    "sites": 6,
+    "lt50": 12,
+    "suitability_cells": 72
+  }
+}

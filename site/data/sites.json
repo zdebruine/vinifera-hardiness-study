@@ -1,0 +1,86 @@
+[
+  {
+    "site_id": "GENEVA_NY",
+    "name": "Geneva",
+    "country": "USA",
+    "region": "Finger Lakes NY",
+    "latitude": 42.88,
+    "longitude": -77.03,
+    "gdd_winkler_f": 2450.0,
+    "burial_flag": false,
+    "coldest_event": {
+      "tmin_c": -27.0,
+      "event_label": "JAN_1985"
+    }
+  },
+  {
+    "site_id": "WALLA_WA",
+    "name": "Walla Walla",
+    "country": "USA",
+    "region": "Columbia Valley WA",
+    "latitude": 46.07,
+    "longitude": -118.34,
+    "gdd_winkler_f": 3050.0,
+    "burial_flag": false,
+    "coldest_event": {
+      "tmin_c": -24.0,
+      "event_label": "JAN_1987"
+    }
+  },
+  {
+    "site_id": "GEIS_DE",
+    "name": "Geisenheim",
+    "country": "Germany",
+    "region": "Rheingau",
+    "latitude": 49.98,
+    "longitude": 7.96,
+    "gdd_winkler_f": 2300.0,
+    "burial_flag": false,
+    "coldest_event": {
+      "tmin_c": -22.0,
+      "event_label": "FEB_1956"
+    }
+  },
+  {
+    "site_id": "ORLEANS_QC",
+    "name": "Ile d'Orleans",
+    "country": "Canada",
+    "region": "Quebec",
+    "latitude": 46.92,
+    "longitude": -71.0,
+    "gdd_winkler_f": 1950.0,
+    "burial_flag": true,
+    "coldest_event": {
+      "tmin_c": -31.0,
+      "event_label": "JAN_1985"
+    }
+  },
+  {
+    "site_id": "CHANGLI_CN",
+    "name": "Changli",
+    "country": "China",
+    "region": "Hebei",
+    "latitude": 39.7,
+    "longitude": 119.16,
+    "gdd_winkler_f": 3250.0,
+    "burial_flag": true,
+    "coldest_event": {
+      "tmin_c": -19.0,
+      "event_label": "JAN_1985"
+    }
+  },
+  {
+    "site_id": "OKAN_BC",
+    "name": "Okanagan",
+    "country": "Canada",
+    "region": "British Columbia",
+    "latitude": 49.5,
+    "longitude": -119.6,
+    "gdd_winkler_f": 2550.0,
+    "burial_flag": false,
+    "coldest_event": {
+      "tmin_c": -23.0,
+      "event_label": "JAN_1987"
+    }
+  }
+]

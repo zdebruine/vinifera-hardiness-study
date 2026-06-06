@@ -1,0 +1,13 @@
+variety_id,lt50_c,method,tissue,sampling_date,source
+RIES,-25.5,wsu_dynamic_model,bud,2014-01-15,Ferguson2014_illustrative
+CABF,-24.0,electrolyte_leakage,bud,2014-01-15,Ferguson2014_illustrative
+PINN,-23.5,wsu_dynamic_model,bud,2014-01-15,Ferguson2014_illustrative
+CHAR,-23.0,wsu_dynamic_model,bud,2014-01-15,Ferguson2014_illustrative
+BLAU,-24.0,electrolyte_leakage,bud,2014-01-15,TAMU_class_illustrative
+CABS,-22.5,wsu_dynamic_model,bud,2014-01-15,Ferguson2014_illustrative
+GEWU,-22.0,electrolyte_leakage,bud,2014-01-15,TAMU_class_illustrative
+SAUB,-22.0,electrolyte_leakage,bud,2014-01-15,Ferguson2014_illustrative
+GRUV,-22.0,dta_lte,bud,2014-01-15,TAMU_class_illustrative
+MUTH,-23.0,electrolyte_leakage,bud,2014-01-15,TAMU_class_illustrative
+PING,-22.5,electrolyte_leakage,bud,2014-01-15,TAMU_class_illustrative
+GREN,-18.0,electrolyte_leakage,bud,2014-01-15,TAMU_class_illustrative

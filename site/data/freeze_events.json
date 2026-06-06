@@ -1,0 +1,17 @@
+[
+  {
+    "event_label": "FEB_1956",
+    "date": "1956-02-01",
+    "description": "February 1956 severe cold wave across Europe"
+  },
+  {
+    "event_label": "JAN_1985",
+    "date": "1985-01-21",
+    "description": "January 1985 Arctic outbreak eastern North America"
+  },
+  {
+    "event_label": "JAN_1987",
+    "date": "1987-01-14",
+    "description": "January 1987 Pacific Northwest freeze"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "variety_id": "RIES",
+    "event_label": "FEB_1956",
+    "present_before": "1",
+    "present_after": "1",
+    "n_sites": "4",
+    "any_burial": "0",
+    "p_survived": "0.80",
+    "p_survived_sd": "0.15"
+  },
+  {
+    "variety_id": "RIES",
+    "event_label": "JAN_1985",
+    "present_before": "1",
+    "present_after": "1",
+    "n_sites": "3",
+    "any_burial": "0",
+    "p_survived": "0.70",
+    "p_survived_sd": "0.18"
+  },
+  {
+    "variety_id": "PINN",
+    "event_label": "JAN_1985",
+    "present_before": "1",
+    "present_after": "1",
+    "n_sites": "2",
+    "any_burial": "0",
+    "p_survived": "0.60",
+    "p_survived_sd": "0.20"
+  },
+  {
+    "variety_id": "CABF",
+    "event_label": "JAN_1985",
+    "present_before": "1",
+    "present_after": "1",
+    "n_sites": "2",
+    "any_burial": "0",
+    "p_survived": "0.55",
+    "p_survived_sd": "0.22"
+  },
+  {
+    "variety_id": "GEWU",
+    "event_label": "FEB_1956",
+    "present_before": "1",
+    "present_after": "1",
+    "n_sites": "3",
+    "any_burial": "0",
+    "p_survived": "0.65",
+    "p_survived_sd": "0.20"
+  },
+  {
+    "variety_id": "GREN",
+    "event_label": "JAN_1987",
+    "present_before": "1",
+    "present_after": "0",
+    "n_sites": "2",
+    "any_burial": "0",
+    "p_survived": "0.20",
+    "p_survived_sd": "0.20"
+  },
+  {
+    "variety_id": "CHAR",
+    "event_label": "JAN_1987",
+    "present_before": "1",
+    "present_after": "1",
+    "n_sites": "2",
+    "any_burial": "0",
+    "p_survived": "0.60",
+    "p_survived_sd": "0.22"
+  },
+  {
+    "variety_id": "RIES",
+    "event_label": "JAN_1985",
+    "present_before": "1",
+    "present_after": "1",
+    "n_sites": "2",
+    "any_burial": "1",
+    "p_survived": "0.50",
+    "p_survived_sd": "0.30"
+  }
+]

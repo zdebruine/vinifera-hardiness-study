@@ -1,0 +1,74 @@
+[
+  {
+    "variety_id": "MUTH",
+    "gdd_req_f": "1900",
+    "sigma_f": "220",
+    "anchor": "Rheinhessen DE early-ripening anchor"
+  },
+  {
+    "variety_id": "RIES",
+    "gdd_req_f": "2100",
+    "sigma_f": "240",
+    "anchor": "Mosel/Rheingau DE anchor"
+  },
+  {
+    "variety_id": "PINN",
+    "gdd_req_f": "2200",
+    "sigma_f": "240",
+    "anchor": "Burgundy FR anchor"
+  },
+  {
+    "variety_id": "GEWU",
+    "gdd_req_f": "2150",
+    "sigma_f": "230",
+    "anchor": "Alsace FR anchor"
+  },
+  {
+    "variety_id": "CHAR",
+    "gdd_req_f": "2300",
+    "sigma_f": "250",
+    "anchor": "Burgundy/Champagne FR anchor"
+  },
+  {
+    "variety_id": "PING",
+    "gdd_req_f": "2300",
+    "sigma_f": "240",
+    "anchor": "Alsace FR anchor"
+  },
+  {
+    "variety_id": "GRUV",
+    "gdd_req_f": "2400",
+    "sigma_f": "250",
+    "anchor": "Wachau AT anchor"
+  },
+  {
+    "variety_id": "SAUB",
+    "gdd_req_f": "2500",
+    "sigma_f": "260",
+    "anchor": "Loire FR anchor"
+  },
+  {
+    "variety_id": "BLAU",
+    "gdd_req_f": "2900",
+    "sigma_f": "270",
+    "anchor": "Burgenland AT anchor"
+  },
+  {
+    "variety_id": "CABF",
+    "gdd_req_f": "2900",
+    "sigma_f": "270",
+    "anchor": "Loire/Bordeaux FR anchor"
+  },
+  {
+    "variety_id": "CABS",
+    "gdd_req_f": "3200",
+    "sigma_f": "300",
+    "anchor": "Bordeaux/Napa anchor"
+  },
+  {
+    "variety_id": "GREN",
+    "gdd_req_f": "3300",
+    "sigma_f": "300",
+    "anchor": "southern Rhone FR anchor"
+  }
+]

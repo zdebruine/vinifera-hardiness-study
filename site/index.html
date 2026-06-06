@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cold-Hardy Vinifera Suitability — Tools</title>
+  <meta name="description" content="Open, reproducible tools for scoring cold-hardy Vitis vinifera suitability: winter survival and ripening attainability." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Cold-Hardy Vinifera Suitability</h1>
+      <p class="tagline">Two axes &mdash; <strong>winter survival</strong> &times; <strong>ripening attainability</strong> &mdash; open and reproducible.</p>
+    </div>
+  </header>
+
+  <div class="banner wrap" role="note">
+    <strong>Decision support, not validated prediction.</strong>
+    Data shown is a small <em>illustrative seed sample</em>, not sourced measurements.
+    See the <a href="https://github.com/zdebruine/vinifera-hardiness-study">repository</a> and its caveats.
+  </div>
+
+  <nav class="tabs wrap" aria-label="Tools">
+    <button class="tab" data-tab="suitability" aria-selected="true">Suitability</button>
+    <button class="tab" data-tab="ripening">Ripening</button>
+    <button class="tab" data-tab="climate">Climate &amp; Freezes</button>
+    <button class="tab" data-tab="lt50">Cold Hardiness</button>
+    <button class="tab" data-tab="varieties">Varieties</button>
+    <button class="tab" data-tab="colocation">Colocation</button>
+  </nav>
+
+  <main class="wrap">
+    <!-- 1. Suitability Explorer -->
+    <section id="suitability" class="panel" aria-label="Suitability explorer">
+      <h2>Suitability explorer</h2>
+      <p class="lede">Pick a variety and a site. Survival is screened against the site's coldest seed freeze event; ripening against the site's growing-degree-days. Suitability is the product, with propagated uncertainty.</p>
+      <div class="controls">
+        <label>Variety <select id="suit-variety"></select></label>
+        <label>Site <select id="suit-site"></select></label>
+      </div>
+      <div id="suit-result" class="result-card"></div>
+      <h3>Full matrix</h3>
+      <p class="lede">Every variety &times; site cell, sortable. Suitability = survival &times; ripening.</p>
+      <div class="table-scroll"><table id="suit-table"></table></div>
+    </section>
+
+    <!-- 2. Ripening Calculator -->
+    <section id="ripening" class="panel" hidden aria-label="Ripening calculator">
+      <h2>Ripening calculator</h2>
+      <p class="lede">P(ripen) = &Phi;((GDD<sub>site</sub> &minus; GDD<sub>req</sub>) / &sigma;). The normal CDF gives the logistic-shaped curve. Pick a variety to load its seed requirement, or set values by hand.</p>
+      <div class="controls">
+        <label>Variety <select id="rip-variety"><option value="">(manual)</option></select></label>
+        <label>Site GDD (base 50&deg;F): <output id="rip-gdd-out"></output>
+          <input type="range" id="rip-gdd" min="1200" max="4000" step="25" value="2400" /></label>
+        <label>GDD requirement: <output id="rip-req-out"></output>
+          <input type="range" id="rip-req" min="1500" max="3600" step="25" value="2300" /></label>
+        <label>&sigma; (spread): <output id="rip-sigma-out"></output>
+          <input type="range" id="rip-sigma" min="80" max="500" step="10" value="250" /></label>
+      </div>
+      <div id="rip-result" class="result-card"></div>
+      <svg id="rip-curve" class="curve" viewBox="0 0 600 240" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Ripening probability curve"></svg>
+    </section>
+
+    <!-- 3. Climate & Freezes -->
+    <section id="climate" class="panel" hidden aria-label="Climate and freeze sites">
+      <h2>Climate &amp; freeze sites</h2>
+      <p class="lede">Seed cold-exposed sites with Winkler GDD and the minimum temperature of each recorded freeze event. <span class="flag">buried</span> = vines hilled over winter, so survival presence there is uninformative about genetic hardiness.</p>
+      <div id="climate-cards" class="cards"></div>
+      <h3>Freeze events</h3>
+      <div class="table-scroll"><table id="freeze-table"></table></div>
+    </section>
+
+    <!-- 4. LT50 Browser -->
+    <section id="lt50" class="panel" hidden aria-label="Cold hardiness LT50 browser">
+      <h2>Cold hardiness (LT50)</h2>
+      <p class="lede">Midwinter bud LT50 (&deg;C; more negative = hardier), with assay method and tissue. Click a header to sort.</p>
+      <label class="filter">Filter <input type="search" id="lt50-filter" placeholder="variety or method" /></label>
+      <div class="table-scroll"><table id="lt50-table"></table></div>
+    </section>
+
+    <!-- 5. Varieties & Pedigree -->
+    <section id="varieties" class="panel" hidden aria-label="Variety and pedigree explorer">
+      <h2>Varieties &amp; pedigree</h2>
+      <p class="lede">The seed variety universe with synonyms and recorded parents.</p>
+      <label class="filter">Filter <input type="search" id="var-filter" placeholder="name or synonym" /></label>
+      <div id="variety-cards" class="cards"></div>
+    </section>
+
+    <!-- 6. Colocation -->
+    <section id="colocation" class="panel" hidden aria-label="Colocation browser">
+      <h2>Colocation</h2>
+      <p class="lede">Region &times; variety bearing hectares (Anderson-style). Co-located varieties form the imputation graph &mdash; but colocation encodes tradition and market, not only hardiness.</p>
+      <div id="coloc-regions" class="cards"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Built <span id="build-time">&mdash;</span> from seed data.
+    Code MIT-licensed; data sources retain their own licenses (see repo <code>ATTRIBUTION.md</code>).</p>
+    <p><a href="https://github.com/zdebruine/vinifera-hardiness-study">github.com/zdebruine/vinifera-hardiness-study</a></p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

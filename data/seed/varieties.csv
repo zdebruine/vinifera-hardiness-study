@@ -1,0 +1,13 @@
+variety_id,prime_name,color,species,fps_id
+RIES,Riesling,white,Vitis vinifera,
+CHAR,Chardonnay,white,Vitis vinifera,
+PINN,Pinot noir,red,Vitis vinifera,
+GEWU,Gewurztraminer,rose,Vitis vinifera,
+CABS,Cabernet Sauvignon,red,Vitis vinifera,
+CABF,Cabernet franc,red,Vitis vinifera,
+SAUB,Sauvignon blanc,white,Vitis vinifera,
+GRUV,Gruner Veltliner,white,Vitis vinifera,
+BLAU,Blaufrankisch,red,Vitis vinifera,
+GREN,Grenache,red,Vitis vinifera,
+PING,Pinot gris,white,Vitis vinifera,
+MUTH,Muller-Thurgau,white,Vitis vinifera,

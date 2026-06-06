@@ -1,0 +1,15 @@
+region,variety_id,bearing_ha,year,source
+Rheingau DE,RIES,2400,2016,Anderson2020_illustrative
+Rheingau DE,PINN,400,2016,Anderson2020_illustrative
+Mosel DE,RIES,5100,2016,Anderson2020_illustrative
+Mosel DE,MUTH,900,2016,Anderson2020_illustrative
+Wachau AT,GRUV,1300,2016,Anderson2020_illustrative
+Wachau AT,RIES,500,2016,Anderson2020_illustrative
+Burgenland AT,BLAU,2700,2016,Anderson2020_illustrative
+Finger Lakes NY,RIES,400,2016,Anderson2020_illustrative
+Finger Lakes NY,CABF,150,2016,Anderson2020_illustrative
+Columbia Valley WA,CABS,5200,2016,Anderson2020_illustrative
+Columbia Valley WA,CHAR,1500,2016,Anderson2020_illustrative
+Alsace FR,GEWU,3000,2016,Anderson2020_illustrative
+Alsace FR,PING,2400,2016,Anderson2020_illustrative
+Alsace FR,RIES,3500,2016,Anderson2020_illustrative

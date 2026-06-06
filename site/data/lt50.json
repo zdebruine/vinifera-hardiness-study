@@ -1,0 +1,98 @@
+[
+  {
+    "variety_id": "RIES",
+    "lt50_c": "-25.5",
+    "method": "wsu_dynamic_model",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "Ferguson2014_illustrative"
+  },
+  {
+    "variety_id": "CABF",
+    "lt50_c": "-24.0",
+    "method": "electrolyte_leakage",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "Ferguson2014_illustrative"
+  },
+  {
+    "variety_id": "PINN",
+    "lt50_c": "-23.5",
+    "method": "wsu_dynamic_model",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "Ferguson2014_illustrative"
+  },
+  {
+    "variety_id": "CHAR",
+    "lt50_c": "-23.0",
+    "method": "wsu_dynamic_model",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "Ferguson2014_illustrative"
+  },
+  {
+    "variety_id": "BLAU",
+    "lt50_c": "-24.0",
+    "method": "electrolyte_leakage",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "TAMU_class_illustrative"
+  },
+  {
+    "variety_id": "CABS",
+    "lt50_c": "-22.5",
+    "method": "wsu_dynamic_model",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "Ferguson2014_illustrative"
+  },
+  {
+    "variety_id": "GEWU",
+    "lt50_c": "-22.0",
+    "method": "electrolyte_leakage",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "TAMU_class_illustrative"
+  },
+  {
+    "variety_id": "SAUB",
+    "lt50_c": "-22.0",
+    "method": "electrolyte_leakage",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "Ferguson2014_illustrative"
+  },
+  {
+    "variety_id": "GRUV",
+    "lt50_c": "-22.0",
+    "method": "dta_lte",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "TAMU_class_illustrative"
+  },
+  {
+    "variety_id": "MUTH",
+    "lt50_c": "-23.0",
+    "method": "electrolyte_leakage",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "TAMU_class_illustrative"
+  },
+  {
+    "variety_id": "PING",
+    "lt50_c": "-22.5",
+    "method": "electrolyte_leakage",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "TAMU_class_illustrative"
+  },
+  {
+    "variety_id": "GREN",
+    "lt50_c": "-18.0",
+    "method": "electrolyte_leakage",
+    "tissue": "bud",
+    "sampling_date": "2014-01-15",
+    "source": "TAMU_class_illustrative"
+  }
+]

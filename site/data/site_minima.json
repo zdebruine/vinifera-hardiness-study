@@ -1,0 +1,32 @@
+[
+  {
+    "site_id": "GEIS_DE",
+    "event_label": "FEB_1956",
+    "tmin_c": "-22.0"
+  },
+  {
+    "site_id": "ORLEANS_QC",
+    "event_label": "JAN_1985",
+    "tmin_c": "-31.0"
+  },
+  {
+    "site_id": "GENEVA_NY",
+    "event_label": "JAN_1985",
+    "tmin_c": "-27.0"
+  },
+  {
+    "site_id": "WALLA_WA",
+    "event_label": "JAN_1987",
+    "tmin_c": "-24.0"
+  },
+  {
+    "site_id": "OKAN_BC",
+    "event_label": "JAN_1987",
+    "tmin_c": "-23.0"
+  },
+  {
+    "site_id": "CHANGLI_CN",
+    "event_label": "JAN_1985",
+    "tmin_c": "-19.0"
+  }
+]
