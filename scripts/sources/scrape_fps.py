@@ -40,7 +40,11 @@ HYBRID_RE = re.compile(r"\b(hybrid|interspecific|complex hybrid)\b", re.I)
 ROOTSTOCK_RE = re.compile(r"\brootstock\b", re.I)
 
 
-def fetch(url: str, retries: int = 4) -> str:
+class Blocked(RuntimeError):
+    """Raised on a 403/blocked response so callers can fail fast (no retry storm)."""
+
+
+def fetch(url: str, retries: int = 3) -> str:
     last = None
     for attempt in range(retries):
         try:
@@ -49,12 +53,13 @@ def fetch(url: str, retries: int = 4) -> str:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return resp.read().decode("utf-8", "replace")
         except urllib.error.HTTPError as e:
-            if e.code in (403, 429):
-                time.sleep(5 * (attempt + 1))
+            if e.code == 403:
+                raise Blocked(f"403 Forbidden for {url} (UA blocked / IP denied)") from e
             last = e
-        except Exception as e:  # noqa: BLE001 - network, retry
+            time.sleep(2 * (attempt + 1))   # e.g. 429/5xx: brief backoff
+        except Exception as e:  # noqa: BLE001 - transient network, retry
             last = e
-            time.sleep(2 ** attempt)
+            time.sleep(2 * (attempt + 1))
     raise RuntimeError(f"fetch failed {url}: {last}")
 
 
@@ -71,24 +76,37 @@ def extract_detail_links(html: str) -> dict[str, str]:
 def enumerate_varieties() -> dict[str, str]:
     """Collect every (variety_id -> name) from the registry listing(s).
 
-    Tries the base list page, then A-Z letter-indexed variants (parameter name unknown,
-    so a few candidates are attempted). Logs which patterns yielded results.
+    Fails fast: fetch the base list page first; if it is blocked (403) we abort immediately
+    rather than hammering dozens of URL variants. The base page is cached raw for offline
+    inspection so selectors can be refined. Letter-indexed variants are only tried if the
+    base page parses but looks incomplete (parameter name is unconfirmed).
     """
-    found: dict[str, str] = {}
-    candidates = [LIST_URL]
-    for letter in "abcdefghijklmnopqrstuvwxyz":
-        candidates += [f"{LIST_URL}?letter={letter}", f"{LIST_URL}?alpha={letter}",
-                       f"{LIST_URL}?CFGRP={letter.upper()}"]
-    for url in candidates:
-        try:
-            links = extract_detail_links(fetch(url))
-        except RuntimeError as e:
-            print(f"  (skip {url}: {e})", file=sys.stderr)
-            continue
-        if links:
-            print(f"  {len(links):4d} links from {url}")
-            found.update(links)
-        time.sleep(1)
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        base_html = fetch(LIST_URL)
+    except Blocked as e:
+        print(f"  BLOCKED: {e}\n  -> the runner's IP/UA is denied; cannot enumerate. "
+              f"Try a different approach (e.g. proxy, or confirm the public list URL).",
+              file=sys.stderr)
+        return {}
+    (RAW_DIR / "_list.html").write_text(base_html, encoding="utf-8")
+    found = extract_detail_links(base_html)
+    print(f"  {len(found):4d} links from base {LIST_URL}")
+    print(f"  (base page length {len(base_html)} bytes; cached to data/raw/fps/_list.html)")
+
+    if len(found) < 50:   # base page likely letter-indexed; probe a few variants
+        for letter in "abcdefghijklmnopqrstuvwxyz":
+            for url in (f"{LIST_URL}?letter={letter}", f"{LIST_URL}?alpha={letter}",
+                        f"{LIST_URL}?CFGRP={letter.upper()}"):
+                try:
+                    links = extract_detail_links(fetch(url))
+                except (Blocked, RuntimeError):
+                    continue
+                if links:
+                    found.update(links)
+                    break  # this param name works; move to next letter
+            time.sleep(0.5)
+        print(f"  {len(found):4d} links after letter-index probing")
     return found
 
 
