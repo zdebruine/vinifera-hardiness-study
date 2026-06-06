@@ -1,0 +1,59 @@
+name: Scrape source data
+
+# Runs the catalog/region scrapers on GitHub's runners (open network + real browser
+# User-Agent, which can reach sites that 403 the in-session sandbox), then commits the
+# structured outputs back. Triggers on changes to the scrapers (so a push auto-runs it)
+# and on manual dispatch. The commit-back uses [skip ci] and only touches data/, so it
+# does not re-trigger this workflow.
+
+on:
+  push:
+    branches: ["claude/bold-babbage-5ErWG", "main"]
+    paths:
+      - "scripts/sources/**"
+      - "scripts/build_db.py"
+      - ".github/workflows/scrape-sources.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "scrape-${{ github.ref_name }}"
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Scrape FPS / NGR grape catalog
+        run: python scripts/sources/scrape_fps.py
+
+      - name: Classify vinifera (exclude hybrids/rootstocks)
+        run: python scripts/sources/classify_vinifera.py
+
+      - name: Scrape wine regions from Wikidata (lowest level)
+        run: python scripts/sources/scrape_regions_wikidata.py
+
+      - name: Rebuild relational database (integrity check)
+        run: python scripts/build_db.py
+
+      - name: Commit sourced data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/db/varieties.csv data/db/regions.csv \
+                  data/interim/fps_catalog_raw.csv data/interim/fps_classified.csv \
+                  data/PROVENANCE.md 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Scrape FPS varieties + Wikidata regions [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          fi

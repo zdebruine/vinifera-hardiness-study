@@ -5,6 +5,8 @@ data/raw/*
 data/interim/*
 !data/interim/.gitkeep
 !data/interim/anchor_climate.csv
+!data/interim/fps_catalog_raw.csv
+!data/interim/fps_classified.csv
 data/processed/*
 !data/processed/.gitkeep
 !data/processed/region_climate.csv

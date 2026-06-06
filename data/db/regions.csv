@@ -1,54 +1,54 @@
-region_id,name,country,macro_region,latitude,longitude,notes
-bordeaux,Bordeaux,France,Europe,44.84,-0.58,maritime; Atlantic
-burgundy,Burgundy (Cote d'Or),France,Europe,47.05,4.83,continental
-beaujolais,Beaujolais,France,Europe,46.10,4.68,granite
-champagne,Champagne,France,Europe,49.05,4.00,coolest red-grape limit
-alsace,Alsace,France,Europe,48.30,7.40,rain-shadow; continental
-loire-anjou,Loire (Anjou-Saumur),France,Europe,47.25,-0.55,maritime
-loire-central,Loire (Sancerre/Touraine),France,Europe,47.33,1.00,continental
-rhone-north,Northern Rhone,France,Europe,45.10,4.83,continental; steep
-rhone-south,Southern Rhone,France,Europe,44.06,4.81,Mediterranean
-languedoc,Languedoc,France,Europe,43.40,3.20,Mediterranean; hot
-provence,Provence,France,Europe,43.45,6.30,Mediterranean
-jura,Jura,France,Europe,46.90,5.75,cool continental
-savoie,Savoie,France,Europe,45.57,5.92,alpine
-mosel,Mosel,Germany,Europe,49.90,7.00,cool; steep slate
-rheingau,Rheingau,Germany,Europe,50.00,8.00,cool continental
-pfalz,Pfalz,Germany,Europe,49.40,8.18,warmer German region
-baden,Baden,Germany,Europe,48.40,7.90,warmest German region
-wachau,Wachau,Austria,Europe,48.38,15.42,continental; terraced
-kamptal,Kamptal,Austria,Europe,48.60,15.68,continental
-burgenland,Burgenland,Austria,Europe,47.70,16.70,warm; Pannonian
-piedmont,Piedmont,Italy,Europe,44.70,8.00,continental; fog
-veneto,Veneto,Italy,Europe,45.50,11.00,varied
-tuscany,Tuscany,Italy,Europe,43.40,11.30,Mediterranean hills
-alto-adige,Alto Adige,Italy,Europe,46.50,11.35,alpine valleys
-friuli,Friuli,Italy,Europe,46.00,13.30,cool northeast
-sicily,Sicily (Etna),Italy,Europe,37.75,15.00,volcanic; altitude
-puglia,Puglia,Italy,Europe,40.50,17.00,hot; flat
-rioja,Rioja,Spain,Europe,42.40,-2.50,continental
-ribera-del-duero,Ribera del Duero,Spain,Europe,41.60,-3.70,high plateau; cold nights
-priorat,Priorat,Spain,Europe,41.20,0.80,hot; llicorella
-rias-baixas,Rias Baixas,Spain,Europe,42.40,-8.70,Atlantic; wet
-jerez,Jerez,Spain,Europe,36.70,-6.10,hot; albariza
-douro,Douro,Portugal,Europe,41.20,-7.60,hot continental; schist
-vinho-verde,Vinho Verde,Portugal,Europe,41.60,-8.40,Atlantic; cool wet
-dao,Dao,Portugal,Europe,40.50,-7.90,granite; sheltered
-tokaj,Tokaj,Hungary,Europe,48.20,21.40,continental; botrytis
-eger,Eger,Hungary,Europe,47.90,20.40,continental
-santorini,Santorini,Greece,Europe,36.40,25.43,volcanic; windy; arid
-nemea,Nemea,Greece,Europe,37.82,22.67,altitude varies
-naoussa,Naoussa,Greece,Europe,40.63,22.07,continental
-kakheti,Kakheti,Georgia,Caucasus,41.65,45.70,Alazani valley; continental
-kartli,Kartli,Georgia,Caucasus,41.90,44.30,higher; continental
-imereti,Imereti,Georgia,Caucasus,42.25,42.70,humid subtropical
-racha,Racha,Georgia,Caucasus,42.60,43.10,mountain; cool
-vayots-dzor,Vayots Dzor,Armenia,Caucasus,39.70,45.20,high altitude; Areni
-aragatsotn,Aragatsotn,Armenia,Caucasus,40.30,44.20,volcanic slopes; high
-ganja-azerbaijan,Ganja-Gazakh,Azerbaijan,Caucasus,40.90,46.20,continental
-napa,Napa Valley,USA,North America,38.50,-122.30,Mediterranean
-willamette,Willamette Valley,USA,North America,45.20,-123.10,cool maritime
-finger-lakes,Finger Lakes,USA,North America,42.60,-76.90,cold continental; lake-moderated
-mendoza,Mendoza (Uco),Argentina,South America,-33.50,-69.00,high desert
-barossa,Barossa Valley,Australia,Oceania,-34.53,138.95,warm Mediterranean
-marlborough,Marlborough,New Zealand,Oceania,-41.50,173.90,cool maritime
+region_id,name,parent_id,level,is_leaf,country,macro_region,latitude,longitude,wikidata_id,source
+bordeaux,Bordeaux,,region,1,France,Europe,44.84,-0.58,,curated_v1
+burgundy,Burgundy (Cote d'Or),,region,1,France,Europe,47.05,4.83,,curated_v1
+beaujolais,Beaujolais,,region,1,France,Europe,46.10,4.68,,curated_v1
+champagne,Champagne,,region,1,France,Europe,49.05,4.00,,curated_v1
+alsace,Alsace,,region,1,France,Europe,48.30,7.40,,curated_v1
+loire-anjou,Loire (Anjou-Saumur),,region,1,France,Europe,47.25,-0.55,,curated_v1
+loire-central,Loire (Sancerre/Touraine),,region,1,France,Europe,47.33,1.00,,curated_v1
+rhone-north,Northern Rhone,,region,1,France,Europe,45.10,4.83,,curated_v1
+rhone-south,Southern Rhone,,region,1,France,Europe,44.06,4.81,,curated_v1
+languedoc,Languedoc,,region,1,France,Europe,43.40,3.20,,curated_v1
+provence,Provence,,region,1,France,Europe,43.45,6.30,,curated_v1
+jura,Jura,,region,1,France,Europe,46.90,5.75,,curated_v1
+savoie,Savoie,,region,1,France,Europe,45.57,5.92,,curated_v1
+mosel,Mosel,,region,1,Germany,Europe,49.90,7.00,,curated_v1
+rheingau,Rheingau,,region,1,Germany,Europe,50.00,8.00,,curated_v1
+pfalz,Pfalz,,region,1,Germany,Europe,49.40,8.18,,curated_v1
+baden,Baden,,region,1,Germany,Europe,48.40,7.90,,curated_v1
+wachau,Wachau,,region,1,Austria,Europe,48.38,15.42,,curated_v1
+kamptal,Kamptal,,region,1,Austria,Europe,48.60,15.68,,curated_v1
+burgenland,Burgenland,,region,1,Austria,Europe,47.70,16.70,,curated_v1
+piedmont,Piedmont,,region,1,Italy,Europe,44.70,8.00,,curated_v1
+veneto,Veneto,,region,1,Italy,Europe,45.50,11.00,,curated_v1
+tuscany,Tuscany,,region,1,Italy,Europe,43.40,11.30,,curated_v1
+alto-adige,Alto Adige,,region,1,Italy,Europe,46.50,11.35,,curated_v1
+friuli,Friuli,,region,1,Italy,Europe,46.00,13.30,,curated_v1
+sicily,Sicily (Etna),,region,1,Italy,Europe,37.75,15.00,,curated_v1
+puglia,Puglia,,region,1,Italy,Europe,40.50,17.00,,curated_v1
+rioja,Rioja,,region,1,Spain,Europe,42.40,-2.50,,curated_v1
+ribera-del-duero,Ribera del Duero,,region,1,Spain,Europe,41.60,-3.70,,curated_v1
+priorat,Priorat,,region,1,Spain,Europe,41.20,0.80,,curated_v1
+rias-baixas,Rias Baixas,,region,1,Spain,Europe,42.40,-8.70,,curated_v1
+jerez,Jerez,,region,1,Spain,Europe,36.70,-6.10,,curated_v1
+douro,Douro,,region,1,Portugal,Europe,41.20,-7.60,,curated_v1
+vinho-verde,Vinho Verde,,region,1,Portugal,Europe,41.60,-8.40,,curated_v1
+dao,Dao,,region,1,Portugal,Europe,40.50,-7.90,,curated_v1
+tokaj,Tokaj,,region,1,Hungary,Europe,48.20,21.40,,curated_v1
+eger,Eger,,region,1,Hungary,Europe,47.90,20.40,,curated_v1
+santorini,Santorini,,region,1,Greece,Europe,36.40,25.43,,curated_v1
+nemea,Nemea,,region,1,Greece,Europe,37.82,22.67,,curated_v1
+naoussa,Naoussa,,region,1,Greece,Europe,40.63,22.07,,curated_v1
+kakheti,Kakheti,,region,1,Georgia,Caucasus,41.65,45.70,,curated_v1
+kartli,Kartli,,region,1,Georgia,Caucasus,41.90,44.30,,curated_v1
+imereti,Imereti,,region,1,Georgia,Caucasus,42.25,42.70,,curated_v1
+racha,Racha,,region,1,Georgia,Caucasus,42.60,43.10,,curated_v1
+vayots-dzor,Vayots Dzor,,region,1,Armenia,Caucasus,39.70,45.20,,curated_v1
+aragatsotn,Aragatsotn,,region,1,Armenia,Caucasus,40.30,44.20,,curated_v1
+ganja-azerbaijan,Ganja-Gazakh,,region,1,Azerbaijan,Caucasus,40.90,46.20,,curated_v1
+napa,Napa Valley,,region,1,USA,North America,38.50,-122.30,,curated_v1
+willamette,Willamette Valley,,region,1,USA,North America,45.20,-123.10,,curated_v1
+finger-lakes,Finger Lakes,,region,1,USA,North America,42.60,-76.90,,curated_v1
+mendoza,Mendoza (Uco),,region,1,Argentina,South America,-33.50,-69.00,,curated_v1
+barossa,Barossa Valley,,region,1,Australia,Oceania,-34.53,138.95,,curated_v1
+marlborough,Marlborough,,region,1,New Zealand,Oceania,-41.50,173.90,,curated_v1

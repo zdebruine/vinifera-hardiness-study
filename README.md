@@ -116,12 +116,19 @@ anchors that bracket each region's extremes). Full schema in
 python3 scripts/build_db.py        # -> data/processed/vinifera.db
 ```
 
-**Sourcing (needs open network → runs in GitHub Actions, not the sandbox):**
-`.github/workflows/data-refresh.yml` pulls Open-Meteo ERA5 weather for every climate
-anchor (`scripts/fetch_weather.py`), derives per-region climate + a variation score
-(`scripts/build_climate.py`), and commits the compact outputs back. The FPS catalog and
-Anderson hectare loaders live in `scripts/sources/` and run manually until their live
-selectors are confirmed.
+**Sourcing runs in GitHub Actions** (runner network + browser User-Agent reach sites that
+403 the sandbox), then commits structured data back:
+- `.github/workflows/scrape-sources.yml` → scrapes the FPS/NGR catalog
+  (`scripts/sources/scrape_fps.py`), filters to true vinifera excluding hybrids/rootstocks
+  (`scripts/sources/classify_vinifera.py`), and scrapes lowest-level wine regions from
+  Wikidata (`scripts/sources/scrape_regions_wikidata.py`). Auto-runs when the scrapers change.
+- `.github/workflows/data-refresh.yml` → Open-Meteo ERA5 weather per climate anchor
+  (`scripts/fetch_weather.py`) → per-region climate + variation score (`build_climate.py`).
+  *(Deferred — not weather yet.)*
+
+The scrapers' network calls are isolated from their parsing/classification logic, which is
+unit-tested offline. They are iteration-1 (selectors/QIDs to be tightened from the first
+live run's diagnostics) and cache raw responses for refinement.
 
 ## Setup
 

@@ -1,103 +1,103 @@
-variety_id,prime_name,color,species,origin_country,in_fps,fps_status,notes
-cabernet-sauvignon,Cabernet Sauvignon,red,Vitis vinifera,France,1,listed,Cabernet franc x Sauvignon blanc
-cabernet-franc,Cabernet Franc,red,Vitis vinifera,France,1,listed,
-merlot,Merlot,red,Vitis vinifera,France,1,listed,
-malbec,Malbec,red,Vitis vinifera,France,1,listed,syn. Cot
-petit-verdot,Petit Verdot,red,Vitis vinifera,France,1,listed,
-carmenere,Carmenere,red,Vitis vinifera,France,1,listed,
-pinot-noir,Pinot noir,red,Vitis vinifera,France,1,listed,
-pinot-gris,Pinot gris,gray,Vitis vinifera,France,1,listed,color mutation of Pinot
-pinot-blanc,Pinot blanc,white,Vitis vinifera,France,1,listed,
-pinot-meunier,Meunier,red,Vitis vinifera,France,1,listed,Champagne
-chardonnay,Chardonnay,white,Vitis vinifera,France,1,listed,Pinot x Gouais blanc
-gamay,Gamay noir,red,Vitis vinifera,France,1,listed,
-aligote,Aligote,white,Vitis vinifera,France,1,listed,
-sauvignon-blanc,Sauvignon blanc,white,Vitis vinifera,France,1,listed,
-semillon,Semillon,white,Vitis vinifera,France,1,listed,
-chenin-blanc,Chenin blanc,white,Vitis vinifera,France,1,listed,
-melon,Melon de Bourgogne,white,Vitis vinifera,France,1,listed,Muscadet
-colombard,Colombard,white,Vitis vinifera,France,1,listed,
-folle-blanche,Folle blanche,white,Vitis vinifera,France,1,unverified,
-ugni-blanc,Ugni blanc,white,Vitis vinifera,Italy,1,listed,syn. Trebbiano Toscano
-syrah,Syrah,red,Vitis vinifera,France,1,listed,
-grenache-noir,Grenache noir,red,Vitis vinifera,Spain,1,listed,syn. Garnacha
-mourvedre,Mourvedre,red,Vitis vinifera,Spain,1,listed,syn. Monastrell
-cinsaut,Cinsaut,red,Vitis vinifera,France,1,listed,
-carignan,Carignan,red,Vitis vinifera,Spain,1,listed,syn. Carinena/Mazuelo
-viognier,Viognier,white,Vitis vinifera,France,1,listed,
-marsanne,Marsanne,white,Vitis vinifera,France,1,listed,
-roussanne,Roussanne,white,Vitis vinifera,France,1,listed,
-tannat,Tannat,red,Vitis vinifera,France,1,unverified,
-petit-manseng,Petit Manseng,white,Vitis vinifera,France,1,unverified,
-gros-manseng,Gros Manseng,white,Vitis vinifera,France,0,unverified,
-riesling,Riesling,white,Vitis vinifera,Germany,1,listed,
-muller-thurgau,Muller-Thurgau,white,Vitis vinifera,Germany,1,listed,Riesling x Madeleine Royale
-silvaner,Silvaner,white,Vitis vinifera,Austria,1,listed,
-gewurztraminer,Gewurztraminer,rose,Vitis vinifera,Germany,1,listed,aromatic Traminer
-savagnin,Savagnin blanc,white,Vitis vinifera,France,1,unverified,Traminer; Jura
-gruner-veltliner,Gruner Veltliner,white,Vitis vinifera,Austria,1,listed,Traminer x St. Georgen
-blaufrankisch,Blaufrankisch,red,Vitis vinifera,Austria,1,listed,syn. Lemberger/Kekfrankos
-zweigelt,Zweigelt,red,Vitis vinifera,Austria,1,unverified,Blaufrankisch x St. Laurent
-st-laurent,St. Laurent,red,Vitis vinifera,Austria,0,unverified,
-welschriesling,Welschriesling,white,Vitis vinifera,Croatia,0,unverified,Graševina
-nebbiolo,Nebbiolo,red,Vitis vinifera,Italy,1,listed,
-barbera,Barbera,red,Vitis vinifera,Italy,1,listed,
-dolcetto,Dolcetto,red,Vitis vinifera,Italy,1,listed,
-sangiovese,Sangiovese,red,Vitis vinifera,Italy,1,listed,
-montepulciano,Montepulciano,red,Vitis vinifera,Italy,1,unverified,
-aglianico,Aglianico,red,Vitis vinifera,Italy,1,unverified,
-primitivo,Primitivo,red,Vitis vinifera,Croatia,1,listed,syn. Zinfandel/Tribidrag
-corvina,Corvina Veronese,red,Vitis vinifera,Italy,0,absent,Valpolicella
-garganega,Garganega,white,Vitis vinifera,Italy,0,unverified,Soave
-glera,Glera,white,Vitis vinifera,Italy,0,absent,Prosecco
-vermentino,Vermentino,white,Vitis vinifera,Italy,1,unverified,
-cortese,Cortese,white,Vitis vinifera,Italy,0,absent,Gavi
-arneis,Arneis,white,Vitis vinifera,Italy,0,unverified,
-fiano,Fiano,white,Vitis vinifera,Italy,0,unverified,
-greco,Greco,white,Vitis vinifera,Italy,0,unverified,
-lagrein,Lagrein,red,Vitis vinifera,Italy,0,absent,Alto Adige
-teroldego,Teroldego,red,Vitis vinifera,Italy,0,absent,Trentino
-schiava,Schiava,red,Vitis vinifera,Italy,0,absent,Vernatsch; Alto Adige
-ribolla-gialla,Ribolla Gialla,white,Vitis vinifera,Italy,0,absent,Friuli/Slovenia
-friulano,Friulano,white,Vitis vinifera,Italy,0,absent,Sauvignonasse
-tempranillo,Tempranillo,red,Vitis vinifera,Spain,1,listed,syn. Tinta Roriz/Aragonez
-albarino,Albarino,white,Vitis vinifera,Spain,1,unverified,syn. Alvarinho
-verdejo,Verdejo,white,Vitis vinifera,Spain,0,unverified,Rueda
-godello,Godello,white,Vitis vinifera,Spain,0,absent,
-mencia,Mencia,red,Vitis vinifera,Spain,0,absent,
-bobal,Bobal,red,Vitis vinifera,Spain,0,absent,
-macabeo,Macabeo,white,Vitis vinifera,Spain,0,unverified,syn. Viura
-xarel-lo,Xarel-lo,white,Vitis vinifera,Spain,0,absent,Cava
-parellada,Parellada,white,Vitis vinifera,Spain,0,absent,Cava
-palomino,Palomino Fino,white,Vitis vinifera,Spain,1,unverified,Sherry
-pedro-ximenez,Pedro Ximenez,white,Vitis vinifera,Spain,0,unverified,
-touriga-nacional,Touriga Nacional,red,Vitis vinifera,Portugal,1,unverified,
-touriga-franca,Touriga Franca,red,Vitis vinifera,Portugal,0,absent,
-baga,Baga,red,Vitis vinifera,Portugal,0,absent,Bairrada
-encruzado,Encruzado,white,Vitis vinifera,Portugal,0,absent,Dao
-arinto,Arinto,white,Vitis vinifera,Portugal,0,absent,
-loureiro,Loureiro,white,Vitis vinifera,Portugal,0,absent,Vinho Verde
-furmint,Furmint,white,Vitis vinifera,Hungary,0,unverified,Tokaj
-harslevelu,Harslevelu,white,Vitis vinifera,Hungary,0,absent,Tokaj
-kadarka,Kadarka,red,Vitis vinifera,Hungary,0,absent,
-assyrtiko,Assyrtiko,white,Vitis vinifera,Greece,0,unverified,Santorini
-agiorgitiko,Agiorgitiko,red,Vitis vinifera,Greece,0,absent,Nemea
-xinomavro,Xinomavro,red,Vitis vinifera,Greece,0,absent,Naoussa
-moschofilero,Moschofilero,rose,Vitis vinifera,Greece,0,absent,Mantinia
-muscat-blanc,Muscat blanc a Petits Grains,white,Vitis vinifera,Greece,1,listed,
-muscat-alexandria,Muscat of Alexandria,white,Vitis vinifera,Egypt,1,listed,
-saperavi,Saperavi,red,Vitis vinifera,Georgia,1,unverified,teinturier; Kakheti
-rkatsiteli,Rkatsiteli,white,Vitis vinifera,Georgia,1,unverified,Kakheti
-mtsvane-kakhuri,Mtsvane Kakhuri,white,Vitis vinifera,Georgia,0,absent,Kakheti
-kisi,Kisi,white,Vitis vinifera,Georgia,0,absent,Kakheti
-khikhvi,Khikhvi,white,Vitis vinifera,Georgia,0,absent,Kakheti
-chinuri,Chinuri,white,Vitis vinifera,Georgia,0,absent,Kartli
-tsolikouri,Tsolikouri,white,Vitis vinifera,Georgia,0,absent,Imereti
-tsitska,Tsitska,white,Vitis vinifera,Georgia,0,absent,Imereti
-aleksandrouli,Aleksandrouli,red,Vitis vinifera,Georgia,0,absent,Racha
-ojaleshi,Ojaleshi,red,Vitis vinifera,Georgia,0,absent,Lechkhumi
-areni-noir,Areni noir,red,Vitis vinifera,Armenia,0,absent,Vayots Dzor
-voskehat,Voskehat,white,Vitis vinifera,Armenia,0,absent,
-khndoghni,Khndoghni,red,Vitis vinifera,Armenia,0,absent,syn. Sireni
-bayanshira,Bayanshira,white,Vitis vinifera,Azerbaijan,0,absent,
-madrasa,Madrasa,red,Vitis vinifera,Azerbaijan,0,absent,
+variety_id,prime_name,color,species,origin_country,is_vinifera,classification,fps_variety_id,vivc_number,needs_review,source,notes
+cabernet-sauvignon,Cabernet Sauvignon,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,Cabernet franc x Sauvignon blanc
+cabernet-franc,Cabernet Franc,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+merlot,Merlot,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+malbec,Malbec,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,syn. Cot
+petit-verdot,Petit Verdot,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+carmenere,Carmenere,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+pinot-noir,Pinot noir,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+pinot-gris,Pinot gris,gray,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,color mutation of Pinot
+pinot-blanc,Pinot blanc,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+pinot-meunier,Meunier,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,Champagne
+chardonnay,Chardonnay,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,Pinot x Gouais blanc
+gamay,Gamay noir,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+aligote,Aligote,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+sauvignon-blanc,Sauvignon blanc,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+semillon,Semillon,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+chenin-blanc,Chenin blanc,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+melon,Melon de Bourgogne,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,Muscadet
+colombard,Colombard,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+folle-blanche,Folle blanche,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+ugni-blanc,Ugni blanc,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,syn. Trebbiano Toscano
+syrah,Syrah,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+grenache-noir,Grenache noir,red,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,syn. Garnacha
+mourvedre,Mourvedre,red,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,syn. Monastrell
+cinsaut,Cinsaut,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+carignan,Carignan,red,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,syn. Carinena/Mazuelo
+viognier,Viognier,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+marsanne,Marsanne,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+roussanne,Roussanne,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+tannat,Tannat,red,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+petit-manseng,Petit Manseng,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+gros-manseng,Gros Manseng,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,
+riesling,Riesling,white,Vitis vinifera,Germany,1,curated_v1,,,0,curated_v1,
+muller-thurgau,Muller-Thurgau,white,Vitis vinifera,Germany,1,curated_v1,,,0,curated_v1,Riesling x Madeleine Royale
+silvaner,Silvaner,white,Vitis vinifera,Austria,1,curated_v1,,,0,curated_v1,
+gewurztraminer,Gewurztraminer,rose,Vitis vinifera,Germany,1,curated_v1,,,0,curated_v1,aromatic Traminer
+savagnin,Savagnin blanc,white,Vitis vinifera,France,1,curated_v1,,,0,curated_v1,Traminer; Jura
+gruner-veltliner,Gruner Veltliner,white,Vitis vinifera,Austria,1,curated_v1,,,0,curated_v1,Traminer x St. Georgen
+blaufrankisch,Blaufrankisch,red,Vitis vinifera,Austria,1,curated_v1,,,0,curated_v1,syn. Lemberger/Kekfrankos
+zweigelt,Zweigelt,red,Vitis vinifera,Austria,1,curated_v1,,,0,curated_v1,Blaufrankisch x St. Laurent
+st-laurent,St. Laurent,red,Vitis vinifera,Austria,1,curated_v1,,,0,curated_v1,
+welschriesling,Welschriesling,white,Vitis vinifera,Croatia,1,curated_v1,,,0,curated_v1,Graševina
+nebbiolo,Nebbiolo,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+barbera,Barbera,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+dolcetto,Dolcetto,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+sangiovese,Sangiovese,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+montepulciano,Montepulciano,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+aglianico,Aglianico,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+primitivo,Primitivo,red,Vitis vinifera,Croatia,1,curated_v1,,,0,curated_v1,syn. Zinfandel/Tribidrag
+corvina,Corvina Veronese,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Valpolicella
+garganega,Garganega,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Soave
+glera,Glera,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Prosecco
+vermentino,Vermentino,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+cortese,Cortese,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Gavi
+arneis,Arneis,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+fiano,Fiano,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+greco,Greco,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,
+lagrein,Lagrein,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Alto Adige
+teroldego,Teroldego,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Trentino
+schiava,Schiava,red,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Vernatsch; Alto Adige
+ribolla-gialla,Ribolla Gialla,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Friuli/Slovenia
+friulano,Friulano,white,Vitis vinifera,Italy,1,curated_v1,,,0,curated_v1,Sauvignonasse
+tempranillo,Tempranillo,red,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,syn. Tinta Roriz/Aragonez
+albarino,Albarino,white,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,syn. Alvarinho
+verdejo,Verdejo,white,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,Rueda
+godello,Godello,white,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,
+mencia,Mencia,red,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,
+bobal,Bobal,red,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,
+macabeo,Macabeo,white,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,syn. Viura
+xarel-lo,Xarel-lo,white,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,Cava
+parellada,Parellada,white,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,Cava
+palomino,Palomino Fino,white,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,Sherry
+pedro-ximenez,Pedro Ximenez,white,Vitis vinifera,Spain,1,curated_v1,,,0,curated_v1,
+touriga-nacional,Touriga Nacional,red,Vitis vinifera,Portugal,1,curated_v1,,,0,curated_v1,
+touriga-franca,Touriga Franca,red,Vitis vinifera,Portugal,1,curated_v1,,,0,curated_v1,
+baga,Baga,red,Vitis vinifera,Portugal,1,curated_v1,,,0,curated_v1,Bairrada
+encruzado,Encruzado,white,Vitis vinifera,Portugal,1,curated_v1,,,0,curated_v1,Dao
+arinto,Arinto,white,Vitis vinifera,Portugal,1,curated_v1,,,0,curated_v1,
+loureiro,Loureiro,white,Vitis vinifera,Portugal,1,curated_v1,,,0,curated_v1,Vinho Verde
+furmint,Furmint,white,Vitis vinifera,Hungary,1,curated_v1,,,0,curated_v1,Tokaj
+harslevelu,Harslevelu,white,Vitis vinifera,Hungary,1,curated_v1,,,0,curated_v1,Tokaj
+kadarka,Kadarka,red,Vitis vinifera,Hungary,1,curated_v1,,,0,curated_v1,
+assyrtiko,Assyrtiko,white,Vitis vinifera,Greece,1,curated_v1,,,0,curated_v1,Santorini
+agiorgitiko,Agiorgitiko,red,Vitis vinifera,Greece,1,curated_v1,,,0,curated_v1,Nemea
+xinomavro,Xinomavro,red,Vitis vinifera,Greece,1,curated_v1,,,0,curated_v1,Naoussa
+moschofilero,Moschofilero,rose,Vitis vinifera,Greece,1,curated_v1,,,0,curated_v1,Mantinia
+muscat-blanc,Muscat blanc a Petits Grains,white,Vitis vinifera,Greece,1,curated_v1,,,0,curated_v1,
+muscat-alexandria,Muscat of Alexandria,white,Vitis vinifera,Egypt,1,curated_v1,,,0,curated_v1,
+saperavi,Saperavi,red,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,teinturier; Kakheti
+rkatsiteli,Rkatsiteli,white,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Kakheti
+mtsvane-kakhuri,Mtsvane Kakhuri,white,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Kakheti
+kisi,Kisi,white,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Kakheti
+khikhvi,Khikhvi,white,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Kakheti
+chinuri,Chinuri,white,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Kartli
+tsolikouri,Tsolikouri,white,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Imereti
+tsitska,Tsitska,white,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Imereti
+aleksandrouli,Aleksandrouli,red,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Racha
+ojaleshi,Ojaleshi,red,Vitis vinifera,Georgia,1,curated_v1,,,0,curated_v1,Lechkhumi
+areni-noir,Areni noir,red,Vitis vinifera,Armenia,1,curated_v1,,,0,curated_v1,Vayots Dzor
+voskehat,Voskehat,white,Vitis vinifera,Armenia,1,curated_v1,,,0,curated_v1,
+khndoghni,Khndoghni,red,Vitis vinifera,Armenia,1,curated_v1,,,0,curated_v1,syn. Sireni
+bayanshira,Bayanshira,white,Vitis vinifera,Azerbaijan,1,curated_v1,,,0,curated_v1,
+madrasa,Madrasa,red,Vitis vinifera,Azerbaijan,1,curated_v1,,,0,curated_v1,

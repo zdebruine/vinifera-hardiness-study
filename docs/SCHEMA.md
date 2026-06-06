@@ -23,17 +23,22 @@ hangs off them.
 ## Tables
 
 ### `varieties` — the orchestrating unit
-One row per *V. vinifera* variety. Includes the UC Davis FPS catalog universe plus
-non-FPS varieties that are at least locally common (>~1 acre) in a European or Caucasus
-region. `fps_status` is `listed` (confidently in FPS), `absent` (confidently not), or
-`unverified` (to reconcile against the catalog by `scripts/sources/fetch_fps_catalog.py`).
-`in_fps` is the boolean shortcut. Curated facts (name, color, origin) are real; FPS/VIVC
-membership is verified by the loaders.
+One row per **true *V. vinifera*** variety. Sourced from the UC Davis FPS / National Grape
+Registry catalog (`scripts/sources/scrape_fps.py`) and filtered to pure vinifera by
+`scripts/sources/classify_vinifera.py`, which **excludes interspecific hybrids (incl.
+vinifera × hybrid crosses), American species, muscadines, and rootstocks**. Columns:
+`species`, `is_vinifera` (1/0), `classification` (`vinifera` / `hybrid_or_nonvinifera` /
+`rootstock` / `unverified`), `fps_variety_id`, `vivc_number`, and `needs_review` — set when
+the rules can't decide, so it gets a second-source look rather than a guess. `source` is
+`fps_scrape_v1` for scraped rows, `curated_v1` for the initial hand seed.
 
-### `regions` — wine regions / appellations
-One row per studied region, with an approximate centroid. `macro_region` groups Europe,
-Caucasus, and global examples. Europe and the Caucasus are the focus; other continents are
-included as anchors/contrasts.
+### `regions` — wine regions / appellations (hierarchical, lowest level)
+One row per region at **every** level, linked by `parent_id` (self-referencing). We operate
+at the **lowest classified level**: `is_leaf = 1` marks regions that are not the parent of
+any other region in the set — sub-sub-appellations / crus / climats, never a broad cluster
+when a finer level exists. Sourced from Wikidata (`scripts/sources/scrape_regions_wikidata.py`)
+with `wikidata_id`, `latitude`/`longitude` (from P625), `level`, `country`, and `source`
+(`wikidata_v1` / `curated_v1`). The `leaf_regions` view exposes just the leaves.
 
 ### `wineries` — climate anchors (climatic extremes within a region)
 Two or more points per flagship region, chosen to **bracket that region's climatic
