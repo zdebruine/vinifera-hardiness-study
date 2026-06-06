@@ -96,14 +96,23 @@ national body for the leaves.
 - **Azerbaijan:** no formal appellation system; organise by administrative wine districts
   (e.g. Ganja-Gazakh) until one exists.
 
-## Other Europe (to verify/extend)
+## Other Europe (now enumerated — see `directory/central-eastern-europe.md`)
 
-- **Hungary:** OEM (PDO)/OFJ (PGI); Tokaj has historically classified named **dűlők**
-  (vineyards) — the leaf. *Counts to verify.*
-- **Greece:** PDO (formerly OPAP) ~30+, with sub-zones (e.g. Mantinia, Nemea sub-zones).
-  *To verify.*
-- Also pending: Switzerland (communal/lieu-dit), Slovenia, Croatia, Romania, Bulgaria,
-  Moldova, Austria's neighbours.
+- **Hungary:** 6 regions → **22 districts (borvidék)** → **dűlők** (leaf; Tokaj classified
+  since 1737/1772).
+- **Greece:** geographic zones → **33 PDOs** (OPAP dry + OPE sweet) + PGI; leaf = PDO.
+- **Switzerland** (non-EU): 6 regions → cantonal/communal AOC → **Grand Cru / lieu-dit**.
+- **Slovenia:** 3 regions → **9 districts (okoliš)** → sites.
+- **Croatia:** 3 regions → sub-regions → ~12 appellations → vineyard positions (e.g. Dingač).
+- **Romania:** historic regions → **32 DOCs** → site/ripeness sub-designations.
+- **Bulgaria:** **2 PGI zones** → **~52 PDOs**.
+- **Moldova:** **4 PGIs** (Codru, Valul lui Traian, Ștefan Vodă; Divin = brandy).
+
+## New World (now enumerated — see `directory/caucasus-south-america.md`)
+
+- **Argentina:** province → region → **GI** (~106; INV) + 2 DOC (Luján de Cuyo, San Rafael).
+  Leaf = GI (e.g. Gualtallary, Paraje Altamira).
+- **Chile:** region → sub-region → **zone → area** + transversal Costa/Entre Cordilleras/Andes.
 
 ## New World (anchors / contrasts)
 

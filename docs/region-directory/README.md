@@ -21,6 +21,8 @@ geospatial lists live, and (c) enumerate toward an exhaustive set.
 | [`classification-systems.md`](classification-systems.md) | Per-country appellation hierarchies, the **leaf (lowest) level** and its approx count, and how to search toward an exhaustive list. The core reference. |
 | [`data-sources.md`](data-sources.md) | Authoritative registers + **open geospatial datasets** (boundaries/coordinates) per country/region. What each provides and its license. |
 | [`climatic-extremes.md`](climatic-extremes.md) | Method for characterizing within-region climate variation and selecting **extreme-representative vineyards/estates with coordinates**. |
+| [`climate-anchors-worked.md`](climate-anchors-worked.md) | Worked anchor tables for flagship regions (real localities + coordinates bracketing each gradient). |
+| [`directory/`](directory/) | The enumerated **mid-tier directory** — per-country tables of appellations/districts/sub-regions (the tier above the leaf), with sources. |
 
 ## What search can and can't do here (learned)
 
