@@ -1,0 +1,12 @@
+# Pinned environment for reproducibility.
+# Versions are pinned at first real use; ranges below are intent until then.
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+requests==2.32.3
+openpyxl==3.1.5        # Anderson & Nelgen Excel files
+beautifulsoup4==4.12.3 # FPS / VIVC scraping
+lxml==5.2.2
+networkx==3.3          # colocation knowledge graph + harmonic imputation
+pyyaml==6.0.1
+pytest==8.2.2
