@@ -116,19 +116,17 @@ anchors that bracket each region's extremes). Full schema in
 python3 scripts/build_db.py        # -> data/processed/vinifera.db
 ```
 
-**Sourcing runs in GitHub Actions** (runner network + browser User-Agent reach sites that
-403 the sandbox), then commits structured data back:
-- `.github/workflows/scrape-sources.yml` → scrapes the FPS/NGR catalog
-  (`scripts/sources/scrape_fps.py`), filters to true vinifera excluding hybrids/rootstocks
-  (`scripts/sources/classify_vinifera.py`), and scrapes lowest-level wine regions from
-  Wikidata (`scripts/sources/scrape_regions_wikidata.py`). Auto-runs when the scrapers change.
-- `.github/workflows/data-refresh.yml` → Open-Meteo ERA5 weather per climate anchor
-  (`scripts/fetch_weather.py`) → per-region climate + variation score (`build_climate.py`).
-  *(Deferred — not weather yet.)*
+**Sourcing approach (current direction):** LLM-first via web search, building a documented
+directory of the world's wine regions drilled to the lowest classified level, plus the
+varieties and per-region climate signal. See **[`docs/region-directory/`](docs/region-directory/)**
+— the classification systems per country, where the authoritative/geospatial lists live, and
+the climate-extremes method.
 
-The scrapers' network calls are isolated from their parsing/classification logic, which is
-unit-tested offline. They are iteration-1 (selectors/QIDs to be tightened from the first
-live run's diagnostics) and cache raw responses for refinement.
+Bulk page retrieval (the FPS catalog scrape, region leaf enumeration, weather pulls) is
+**deferred to a local Claude Code instance** with open web access; the in-session sandbox
+can only web-search, not fetch. The `scripts/sources/` scrapers and the (now manual-only)
+`scrape-sources.yml` / `data-refresh.yml` workflows are retained for that local phase, not
+auto-run here.
 
 ## Setup
 

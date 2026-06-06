@@ -1,18 +1,11 @@
 name: Scrape source data
 
-# Runs the catalog/region scrapers on GitHub's runners (open network + real browser
-# User-Agent, which can reach sites that 403 the in-session sandbox), then commits the
-# structured outputs back. Triggers on changes to the scrapers (so a push auto-runs it)
-# and on manual dispatch. The commit-back uses [skip ci] and only touches data/, so it
-# does not re-trigger this workflow.
+# DEFERRED / MANUAL-ONLY. Per project direction, bulk scraping is handled on a local
+# Claude Code instance (which has open web access), not auto-run here. These scrapers are
+# retained for that purpose. This workflow no longer triggers on push -- run it manually
+# from the Actions tab only if you specifically want to test the runner-side scrape.
 
 on:
-  push:
-    branches: ["claude/bold-babbage-5ErWG", "main"]
-    paths:
-      - "scripts/sources/**"
-      - "scripts/build_db.py"
-      - ".github/workflows/scrape-sources.yml"
   workflow_dispatch:
 
 permissions:
